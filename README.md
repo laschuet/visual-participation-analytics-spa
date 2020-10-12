@@ -1,8 +1,8 @@
-# participation-analytics-spa
+# visual-participation-analytics-spa
 
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/laschuet/participation-analytics-spa/blob/master/LICENSE.txt)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/laschuet/visual-participation-analytics-spa/blob/master/LICENSE.txt)
 
-Single page application for participation analytics.
+Visual Participation Analytics (ViPA) single page application.
 
 ## Usage
 
@@ -23,4 +23,4 @@ Create production build.
 
 ## License
 
-participation-analytics-spa is licensed under the [MIT License](./LICENSE.txt).
+visual-participation-analytics-spa is licensed under the [MIT License](./LICENSE.txt).

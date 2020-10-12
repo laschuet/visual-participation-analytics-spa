@@ -1,7 +1,7 @@
 {
-  "name": "participation-analytics-spa",
+  "name": "visual-participation-analytics-spa",
   "version": "0.1.0",
-  "description": "Single page application for participation analytics",
+  "description": "Visual Participation Analytics (ViPA) single page application",
   "author": "Lars Schütz (https://github.com/laschuet)",
   "license": "MIT",
   "private": true,
