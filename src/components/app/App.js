@@ -1,4 +1,4 @@
-import { SquirrelIcon } from "@primer/octicons-react";
+import { TelescopeIcon } from "@primer/octicons-react";
 import React from "react";
 import { NavLink, Route, Switch } from "react-router-dom";
 
@@ -14,7 +14,7 @@ const App = () => {
       <header className="Header px-4">
         <div className="Header-item">
           <NavLink to="/" className="Header-link">
-            <SquirrelIcon className="mr-2" />
+            <TelescopeIcon className="mr-2" />
             ViPA
           </NavLink>
         </div>
