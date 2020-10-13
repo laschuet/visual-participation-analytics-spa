@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import { NavLink } from "react-router-dom";
 
+import { useLocalStorage } from "../hooks/useLocalStorage";
+import { useRest } from "../hooks/useRest";
 import {
   SETTINGS_DATASET_NAME_KEY,
   SETTINGS_DATASET_NAME_VALUE_DEFAULT,
-} from "../constants";
-import { useLocalStorage } from "../hooks/useLocalStorage";
-import { useRest } from "../hooks/useRest";
+} from "../localStorage";
 
 import ContributionList from "./ContributionList";
 import Error from "./Error";

@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import { useLocalStorage } from "../hooks/useLocalStorage";
 import {
   SETTINGS_DATASET_NAME_KEY,
   SETTINGS_DATASET_NAME_VALUE_DEFAULT,
-} from "../constants";
-import { useLocalStorage } from "../hooks/useLocalStorage";
+} from "../localStorage";
 
 const DatasetSettings = ({ datasets }) => {
   const [datasetName, setDatasetName] = useLocalStorage(
