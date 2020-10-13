@@ -2,15 +2,13 @@ import { TelescopeIcon } from "@primer/octicons-react";
 import React from "react";
 import { NavLink, Route, Switch } from "react-router-dom";
 
-import Analytics from "../Analytics";
-import Home from "../Home";
-import Settings from "../Settings";
-
-import "./App.scss";
+import Analytics from "./Analytics";
+import Home from "./Home";
+import Settings from "./Settings";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="d-flex flex-column">
       <header className="Header px-4">
         <div className="Header-item">
           <NavLink to="/" className="Header-link">

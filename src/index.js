@@ -6,7 +6,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import store from "./store";
 
-import App from "./components/app/App";
+import App from "./components/App";
+
+import "./index.scss";
 
 ReactDOM.render(
   <React.StrictMode>
