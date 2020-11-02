@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import counterReducer from "./components/counter/counterSlice";
+import alertReducer from "./components/alert/alertSlice";
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    alert: alertReducer,
   },
 });

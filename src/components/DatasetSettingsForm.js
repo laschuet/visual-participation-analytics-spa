@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import {
@@ -7,20 +8,24 @@ import {
   SETTINGS_DATASET_NAME_VALUE_DEFAULT,
 } from "../localStorage";
 
+import { show } from "./alert/alertSlice";
+
 const DatasetSettingsForm = ({ datasets }) => {
   const [localStorageDatasetName, setLocalStorageDatasetName] = useLocalStorage(
     SETTINGS_DATASET_NAME_KEY,
     SETTINGS_DATASET_NAME_VALUE_DEFAULT
   );
   const [datasetName, setDatasetName] = useState(localStorageDatasetName);
+  const dispatch = useDispatch();
 
   const handleSelect = (evt) => {
     setDatasetName(evt.target.value);
   };
 
   const handleSave = (evt) => {
-    setLocalStorageDatasetName(datasetName);
     evt.preventDefault();
+    setLocalStorageDatasetName(datasetName);
+    dispatch(show("Save"));
   };
 
   return (

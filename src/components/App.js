@@ -1,12 +1,18 @@
 import { TelescopeIcon } from "@primer/octicons-react";
 import React from "react";
+import { useSelector } from "react-redux";
 import { NavLink, Route, Switch } from "react-router-dom";
 
+import { selectMessage } from "./alert/alertSlice";
+
 import Analytics from "./Analytics";
+import Alert from "./alert/Alert";
 import Home from "./Home";
 import Settings from "./Settings";
 
 const App = () => {
+  const alertMessage = useSelector(selectMessage);
+
   return (
     <div className="d-flex flex-column">
       <header className="Header px-4">
@@ -27,6 +33,7 @@ const App = () => {
           </NavLink>
         </div>
       </header>
+      {alertMessage !== "" && <Alert />}
       <div className="p-4">
         <Switch>
           <Route exact path="/">
