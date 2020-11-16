@@ -8,7 +8,7 @@ import Loader from "./Loader";
 
 const DatasetSettings = () => {
   const [{ data: datasets, hasError, isLoading }] = useRest(
-    "http://localhost:8080/api/v1/datasets",
+    "http://localhost:3010/api/v1/datasets",
     []
   );
 

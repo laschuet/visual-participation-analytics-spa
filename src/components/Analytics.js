@@ -18,7 +18,7 @@ const Analytics = () => {
     SETTINGS_DATASET_NAME_VALUE_DEFAULT
   );
   const [{ data: contributions, hasError, isLoading }] = useRest(
-    `http://localhost:8080/api/v1/datasets/${datasetName}/contributions`,
+    `http://localhost:3010/api/v1/datasets/${datasetName}/contributions`,
     []
   );
 
