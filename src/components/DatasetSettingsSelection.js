@@ -10,7 +10,7 @@ import {
 
 import { show } from "./alert/alertSlice";
 
-const DatasetSettingsForm = ({ datasets }) => {
+const DatasetSettingsSelection = ({ datasets }) => {
   const [localStorageDatasetName, setLocalStorageDatasetName] = useLocalStorage(
     SETTINGS_DATASET_NAME_KEY,
     SETTINGS_DATASET_NAME_VALUE_DEFAULT
@@ -61,7 +61,7 @@ const DatasetSettingsForm = ({ datasets }) => {
   );
 };
 
-DatasetSettingsForm.propTypes = {
+DatasetSettingsSelection.propTypes = {
   datasets: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
@@ -70,4 +70,4 @@ DatasetSettingsForm.propTypes = {
   ).isRequired,
 };
 
-export default DatasetSettingsForm;
+export default DatasetSettingsSelection;

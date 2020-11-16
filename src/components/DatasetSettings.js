@@ -2,8 +2,8 @@ import React from "react";
 
 import { useRest } from "../hooks/useRest";
 
-import DatasetSettingsForm from "./DatasetSettingsForm";
 import DatasetSettingsPreprocessing from "./DatasetSettingsPreprocessing";
+import DatasetSettingsSelection from "./DatasetSettingsSelection";
 import Error from "./Error";
 import Loader from "./Loader";
 
@@ -20,7 +20,9 @@ const DatasetSettings = () => {
       </div>
       {hasError && <Error />}
       {isLoading && <Loader />}
-      {!hasError && !isLoading && <DatasetSettingsForm datasets={datasets} />}
+      {!hasError && !isLoading && (
+        <DatasetSettingsSelection datasets={datasets} />
+      )}
       <div className="Subhead">
         <div className="Subhead-heading">Pre-process dataset</div>
       </div>
