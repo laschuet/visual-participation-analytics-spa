@@ -19,11 +19,7 @@ const DatasetSettings = () => {
       </div>
       {hasError && <Error />}
       {isLoading && <Loader />}
-      {!hasError && !isLoading && (
-        <div>
-          <DatasetSettingsForm datasets={datasets} />
-        </div>
-      )}
+      {!hasError && !isLoading && <DatasetSettingsForm datasets={datasets} />}
     </div>
   );
 };
