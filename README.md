@@ -2,7 +2,7 @@
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/laschuet/visual-participation-analytics-spa/blob/master/LICENSE.txt)
 
-Visual Participation Analytics (ViPA) single page application.
+Single page application for Visual Participation Analytics (ViPA).
 
 ## Usage
 
