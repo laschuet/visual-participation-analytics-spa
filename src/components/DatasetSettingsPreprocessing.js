@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const DatasetSettingsPreprocessing = () => {
   const handlePreprocess = (evt) => {
@@ -6,14 +6,14 @@ const DatasetSettingsPreprocessing = () => {
   };
 
   return (
-    <Fragment>
+    <>
       <p>The dataset has not yet been pre-processed.</p>
       <form onSubmit={handlePreprocess}>
         <button className="btn" type="submit">
           Pre-process
         </button>
       </form>
-    </Fragment>
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import React, { Fragment } from "react";
+import React from "react";
 
 import RelativeTime from "./RelativeTime";
 
@@ -23,10 +23,10 @@ const Contribution = ({
           {author}
         </strong>
         {createdAt && (
-          <Fragment>
+          <>
             {" "}
             &middot; <RelativeTime datetime={createdAt} />
-          </Fragment>
+          </>
         )}
       </div>
       <button className="btn btn-link btn-sm float-right">Do 3</button>

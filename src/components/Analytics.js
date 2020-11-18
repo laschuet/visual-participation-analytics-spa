@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 import { useLocalStorage } from "../hooks/useLocalStorage";
@@ -23,7 +23,7 @@ const Analytics = () => {
   );
 
   return (
-    <Fragment>
+    <>
       <h2>Analytics</h2>
       {hasError && <Error />}
       {datasetName === "" && (
@@ -36,7 +36,7 @@ const Analytics = () => {
       ) : (
         <ContributionList contributions={contributions} />
       )}
-    </Fragment>
+    </>
   );
 };
 

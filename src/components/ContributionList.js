@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
-import React, { Fragment } from "react";
+import React from "react";
 
 import Contribution from "./Contribution";
 
 const ContributionList = ({ contributions }) => (
-  <Fragment>
+  <>
     {contributions.map(
       ({
         id,
@@ -35,7 +35,7 @@ const ContributionList = ({ contributions }) => (
         />
       )
     )}
-  </Fragment>
+  </>
 );
 
 ContributionList.propTypes = {
