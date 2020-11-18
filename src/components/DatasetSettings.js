@@ -18,8 +18,16 @@ const DatasetSettings = () => {
       <div className="Subhead">
         <div className="Subhead-heading">Change dataset</div>
       </div>
-      {hasError && <Error />}
-      {isLoading && <Loader />}
+      {hasError && (
+        <p>
+          <Error />
+        </p>
+      )}
+      {isLoading && (
+        <p>
+          <Loader />
+        </p>
+      )}
       {!hasError && !isLoading && (
         <DatasetSettingsSelection datasets={datasets} />
       )}
