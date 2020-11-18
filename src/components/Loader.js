@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 const Loader = () => (
-  <Fragment>
+  <div>
     <span>Loading</span>
     <span className="AnimatedEllipsis"></span>
-  </Fragment>
+  </div>
 );
 
 export default Loader;
