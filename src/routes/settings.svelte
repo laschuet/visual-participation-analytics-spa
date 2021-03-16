@@ -1,9 +1,11 @@
-<script>
-	const datasets = [
+<script lang="ts">
+	import type { DatasetType } from '../types/dataset.type';
+
+	const datasets: DatasetType[] = [
 		{ id: 1, name: 'dataset 1' },
 		{ id: 2, name: 'dataset 2' },
 	];
-	let selected;
+	let selected: string;
 
 	const handleSave = () => {};
 	const handleSelect = () => {};
@@ -34,7 +36,7 @@
 						</option>
 					{/each}
 				</select>
-				<button class="btn" type="submit"> Save </button>
+				<button class="btn" type="submit">Save</button>
 			</dd>
 		</dl>
 	</form>

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Alert from '$lib/Alert.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import Nav from '$lib/Nav.svelte';

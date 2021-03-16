@@ -1,5 +1,5 @@
-<script>
-	import { alertMessage } from '../stores.js';
+<script lang="ts">
+	import { alertMessage } from '../stores';
 
 	const handleAlertClose = () => {
 		$alertMessage = '';
