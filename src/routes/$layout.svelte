@@ -15,7 +15,7 @@
 </main>
 <Footer />
 
-<style lang="scss" global>
+<style global>
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
