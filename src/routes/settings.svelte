@@ -3,7 +3,7 @@
 
 	const datasets: DatasetType[] = [
 		{ id: 1, name: 'dataset 1' },
-		{ id: 2, name: 'dataset 2' },
+		{ id: 2, name: 'dataset 2' }
 	];
 	let selected: string;
 

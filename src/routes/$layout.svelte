@@ -15,7 +15,7 @@
 </main>
 <Footer />
 
-<style global>
+<style lang="postcss" global>
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
