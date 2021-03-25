@@ -10,7 +10,7 @@
 	<div class="bg-indigo-600" role="alert">
 		<div class="max-w-full px-6 py-2">
 			<div class="flex items-center justify-between flex-wrap">
-				<p class="ml-2 font-medium text-white truncate">Message</p>
+				<p class="ml-2 font-medium text-white truncate">{$alertMessage}</p>
 				<div class="order-2 flex-shrink-0">
 					<button
 						type="button"
