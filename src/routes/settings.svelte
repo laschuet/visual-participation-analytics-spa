@@ -7,8 +7,8 @@
 	];
 	let selected: string;
 
-	const handleSave = () => {};
-	const handleSelect = () => {};
+	function handleSave() {};
+	function handleSelect() {};
 </script>
 
 <h1 class="text-3xl font-bold text-gray-900">Settings</h1>

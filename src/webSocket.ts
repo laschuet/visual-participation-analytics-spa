@@ -1,20 +1,20 @@
 import type { Writable } from "svelte/store";
 
-export const createWebSocket = (url: string, store: Writable<string>) => {
+export function createWebSocket(url: string, store: Writable<string>) {
 	const ws = new WebSocket(url);
 
-	const handleClose = () => {
+	function handleClose() {
 		console.log('WebSocket connection has been closed');
 	};
 
-	const handleError = () => {};
+	function handleError() {};
 
-	const handleMessage = (event: MessageEvent) => {
+	function handleMessage(event: MessageEvent) {
 		store.set(event.data);
 		console.log(event.data);
 	};
 
-	const handleOpen = () => {
+	function handleOpen() {
 		console.log('WebSocket connection has been opened');
 	};
 
