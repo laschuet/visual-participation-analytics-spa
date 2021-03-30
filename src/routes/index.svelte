@@ -22,14 +22,14 @@
 <h1 class="text-3xl font-bold text-gray-900 mb-2">Home</h1>
 <button
 	type="button"
-	class="text-white bg-blue-500 px-3 py-1 rounded-md hover:bg-blue-600 focus:outline-none"
+	class="btn"
 	on:click={() => {
 		ws.send('job_rand_sleep');
 	}}>Send</button
 >
 <button
 	type="button"
-	class="text-white bg-blue-500 px-3 py-1 rounded-md hover:bg-blue-600 focus:outline-none"
+	class="btn"
 	on:click={() => {
 		ws.close();
 	}}>Close</button

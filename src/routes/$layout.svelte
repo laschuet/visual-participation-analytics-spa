@@ -2,6 +2,8 @@
 	import Alert from '$lib/Alert.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import Nav from '$lib/Nav.svelte';
+
+	import '../global.css';
 </script>
 
 <svelte:head>
@@ -14,9 +16,3 @@
 	<slot />
 </main>
 <Footer />
-
-<style lang="postcss" global>
-	@tailwind base;
-	@tailwind components;
-	@tailwind utilities;
-</style>
