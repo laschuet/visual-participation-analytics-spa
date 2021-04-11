@@ -6,4 +6,5 @@ import { createWebSocketStore } from './utils';
 
 export const alertMessage = writable<string>('');
 export const contributions = writable<ContributionType[]>([]);
+export const queryContribution = writable<number>(0);
 export const ws = createWebSocketStore('ws://127.0.0.1:3020', '');

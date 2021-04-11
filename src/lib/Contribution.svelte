@@ -1,6 +1,16 @@
 <script lang="ts">
 	import type { ContributionType } from '../types/contribution.type';
 
+	import { queryContribution } from '../stores';
+
+	function handleSelect(id: number) {
+		if ($queryContribution === id) {
+			$queryContribution = 0;
+			return;
+		}
+		$queryContribution = id;
+	}
+
 	export let contribution: ContributionType = {
 		author: '',
 		content: '',
@@ -12,16 +22,19 @@
 	};
 </script>
 
-<div class="max-w-4xl p-4 mb-4 bg-white rounded-md border border-gray-300">
+<div
+	class="max-w-4xl p-4 mb-4 bg-white rounded-md border {contribution.id === $queryContribution
+		? 'border-red-300 border-2'
+		: 'border-gray-300'}"
+	on:click={() => handleSelect(contribution.id)}
+>
 	<div class="flex justify-between items-center">
-		<span class="text-sm font-light text-gray-600 dark:text-gray-400">{contribution.author}</span>
-		<span class="text-sm font-light text-gray-600 dark:text-gray-400"
-			>{contribution.created_at}</span
-		>
+		<span class="text-sm font-light text-gray-700">{contribution.author}</span>
+		<span class="text-sm font-light text-gray-700">{contribution.created_at}</span>
 	</div>
 	<div class="mt-2">
-		<p class="text-xl text-gray-700">{contribution.title}</p>
-		<p class="mt-2 text-gray-600 dark:text-gray-300">{contribution.content}</p>
+		<p class="text-xl text-gray-800">{contribution.title}</p>
+		<p class="mt-2 text-gray-700">{contribution.content}</p>
 	</div>
 	<div class="flex items-center mt-2">
 		<button
